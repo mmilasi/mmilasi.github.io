@@ -1,0 +1,50 @@
+<div class="modal-banner" style="background-image: url('../images/project_modals/pro2.jpg');">
+  <button class="close-btn" onclick="document.getElementById('previewModal').classList.add('hidden')">✕</button>
+</div>
+
+<div class="modal-body">
+  <h2>ReplayEnglish - Lezioni private di inglese</h2>
+  <p>«C'era una volta Teacher Mary»</p>
+
+  <div class="modal-extra-info">
+    <p><strong>Genere:</strong> Didattica personalizzata, supporto scolastico, apprendimento ludico</p>
+    <p><strong>Linguaggi utilizzati:</strong> HTML, CSS, JavaScript, Sass</p>
+    <p><strong>Link:</strong> <a href="https://replayenglish.github.io" target="_blank" class="link-as-text">replayenglish.github.io</a></p>
+
+
+    <p>
+      <a href="https://replayenglish.github.io/" target="_blank" class="link-as-text">ReplayEnglish</a> è un sito web che ho progettato per supportare la mia attività secondaria di 
+      insegnante di inglese per ragazzi. Si tratta di un sito vetrina, volutamente semplice e lineare, pensato per presentare in modo chiaro e immediato chi sono, cosa offro e come 
+      mettersi in contatto con me.<br><br>
+      Il sito fornisce una breve presentazione dell'insegnante e descrive i principali servizi offerti. L'obiettivo non è fornire contenuti didattici online, ma creare un canale 
+      diretto ed efficiente di comunicazione tra me e le famiglie interessate.<br>
+      Per facilitare la gestione degli appuntamenti ho utilizzato <a href="https://calendly.com/" target="_blank" class="link-as-text">Calendly</a>, una piattaforma 
+      che consente agli studenti di visualizzare le disponibilità da me gestite in base al tempo a disposizione e prenotare le lezioni in modo autonomo e immediato. Questo sistema 
+      semplifica la pianificazione, riduce gli scambi di messaggi e garantisce una gestione efficiente del tempo per entrambe le parti: al momento della prenotazione sia io che lo studente/genitore
+      riceviamo una notifica via email con i dettagli dell'appuntamento che viene aggiunto al calendario personale.<br><br>
+      Dal punto di vista grafico, il sito è stato progettato con un'interfaccia pulita ed essenziale, con particolare attenzione alla semplicità d'uso (UI/UX). 
+      La navigazione è intuitiva e accessibile anche per genitori con poca dimestichezza con la tecnologia: pochi clic, nessuna distrazione, tutte le informazioni 
+      fondamentali subito visibili. <br>Per lo sviluppo ho utilizzato HTML, CSS e JavaScript, linguaggi già noti, mentre durante la realizzazione ho avuto modo di 
+      esplorare e sperimentare con Sass, per migliorare l'organizzazione del codice CSS e rendere la manutenzione dello stile più efficiente.
+
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; justify-content: center;">
+      <img src="../images/screens/replay1.jpg" onclick="openImageModal(this.src)" style="height: auto; width: auto; max-width: 150px; max-height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/replay2.jpg" onclick="openImageModal(this.src)" style="height: auto; width: auto; max-width: 150px; max-height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/replay3.jpg" onclick="openImageModal(this.src)" style="height: auto; width: auto; max-width: 150px; max-height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/replay4.jpg" onclick="openImageModal(this.src)" style="height: auto; width: auto; max-width: 150px; max-height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/replay5.jpg" onclick="openImageModal(this.src)" style="height: auto; width: auto; max-width: 150px; max-height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/replay6.jpg" onclick="openImageModal(this.src)" style="height: auto; width: auto; max-width: 150px; max-height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX MODALE PER IMMAGINI -->
+<div id="imageModal" class="modal hidden">
+  <div class="modal-overlay" onclick="document.getElementById('imageModal').classList.add('hidden')"></div>
+  <div class="modal-content" style="background: transparent; border: none; box-shadow: none; max-width: 95vw; max-height: 95vh; display: flex; justify-content: center; align-items: center;">
+    <button class="close-btn" onclick="document.getElementById('imageModal').classList.add('hidden')" style="position: absolute; top: 10px; right: 15px;">✕</button>
+    <img id="imageModalContent" src="" alt="Screenshot" style="width: auto; height: auto; max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px;" />
+  </div>
+</div>

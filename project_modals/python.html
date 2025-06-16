@@ -1,0 +1,58 @@
+<div class="modal-banner" style="background-image: url('../images/project_modals/pro3.jpg');">
+  <button class="close-btn" onclick="document.getElementById('previewModal').classList.add('hidden')">✕</button>
+</div>
+
+<div class="modal-body">
+  <h2>PhotoGallery - Galleria Fotografica con PyQt</h2> 
+  <p>«Un'applicazione desktop per esplorare immagini, progettata con cura e attenzione all'usabilità»</p> 
+
+  <div class="modal-extra-info"> 
+    <p><strong>Genere:</strong> Applicazione GUI, Visualizzazione immagini</p> 
+    <p><strong>Linguaggi utilizzati:</strong> Python, PyQt</p> 
+    <p><strong>Link:</strong> <a href="https://github.com/mmilasi/photoGallery" target="_blank" class="link-as-text">github.com/mmilasi/photoGallery</a></p>
+
+<p>
+  Il Project Work realizzato nell'ambito del corso Cloud DevOps che frequento presso l'ITS Adriano Olivetti, sotto la supervisione dell'Ing. 
+  Stefano Castagnoli, ha come obiettivo la creazione di un'applicazione desktop per la visualizzazione di immagini, utilizzando il linguaggio Python e il framework PyQt.
+  L'applicazione è progettata per offrire un'interfaccia utente intuitiva e reattiva, adattandosi dinamicamente alle dimensioni della 
+  finestra. Tra le funzionalità implementate vi sono:
+<ul>
+<li>Caricamento immagini: Supporta PNG, JPG, JPEG</li>
+<li>Navigazione: Scorri tra le immagini con pulsanti "←" e "→"</li>
+<li>Zoom: Zoom in/out con pulsanti o rotellina mouse (Ctrl+Rotellina), reset zoom con pulsante "1:1"</li>
+<li>Rotazione: Ruota immagini di 90° alla volta</li>
+<li>Like: Aggiungi/rimuovi cuore alle immagini preferite</li>
+<li>Commenti: Aggiungi descrizioni testuali alle immagini</li>
+<li>Selezione multipla: Seleziona più immagini per azioni batch</li>
+<li>Download: Salva singola immagine, crea ZIP per più immagini</li>
+<li>Eliminazione: Rimuovi immagini singole o multiple</li>
+<li>Stampa: Stampa direttamente le immagini</li>
+<li>Temi: Interfaccia chiara/scura personalizzabile</li>
+<li>Fullscreen: Modalità a schermo intero per la visualizzazione</li>
+<li>Ricerca visiva: Ricerca l'immagine corrente su Google Lens</li>
+</ul>
+  La scelta di PyQt come framework è stata motivata dalla sua robustezza e dalla capacità di creare interfacce grafiche moderne e responsive. 
+  Il progetto rappresenta un esercizio pratico nell'applicazione di concetti di sviluppo software e design dell'interfaccia utente, consolidando le competenze 
+  acquisite durante il percorso formativo.
+</p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; justify-content: center;">
+      <img src="../images/screens/py1.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/py2.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/py3.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/py4.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/py5.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/py6.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX MODALE PER IMMAGINI -->
+<div id="imageModal" class="modal hidden">
+  <div class="modal-overlay" onclick="document.getElementById('imageModal').classList.add('hidden')"></div>
+  <div class="modal-content" style="background: transparent; border: none; box-shadow: none; max-width: 95vw; max-height: 95vh; display: flex; justify-content: center; align-items: center;">
+    <button class="close-btn" onclick="document.getElementById('imageModal').classList.add('hidden')" style="position: absolute; top: 10px; right: 15px;">✕</button>
+    <img id="imageModalContent" src="" alt="Screenshot" style="width: auto; height: auto; max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px;" />
+  </div>
+</div>
+

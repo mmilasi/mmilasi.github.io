@@ -1,0 +1,55 @@
+<div class="modal-banner" style="background-image: url('../images/project_modals/pro4.jpg');">
+    <button class="close-btn" onclick="document.getElementById('previewModal').classList.add('hidden')">✕</button>
+</div>
+
+<div class="modal-body">
+    <h2>Bulls and Cows - Gioco da riga di comando</h2> 
+    <p>«Un classico gioco di logica, reinventato per allenare mente e codice»</p> 
+
+    <div class="modal-extra-info"> 
+      <p><strong>Genere:</strong> Gioco da riga di comando, esercizio di logica e programmazione</p> 
+      <p><strong>Linguaggi utilizzati:</strong> Java</p> 
+      <p><strong>Link:</strong> <a href="https://github.com/mmilasi/bullsAndCows" target="_blank" class="link-as-text">github.com/mmilasi/bullsAndCows</a></p>
+
+      <p>
+      Questo progetto nasce dalla volontà di riportare in vita un classico gioco di logica — 
+      Bulls and Cows — attraverso una semplice interfaccia testuale. L'obiettivo è offrire 
+      un'esperienza che stimoli il pensiero critico e la deduzione, sia per il giocatore che 
+      per lo sviluppatore.
+      <br>
+      Il gioco inizia chiedendo al giocatore di definire la lunghezza del codice segreto e il 
+      numero di simboli possibili, che possono includere cifre (0-9) e lettere minuscole (a-z). 
+      Il programma genera quindi un codice segreto composto da simboli unici. Dopo ogni tentativo, 
+      il giocatore riceve un feedback sotto forma di "bulls" e "cows":
+      <ul>
+      <li>Bull: Un simbolo nella posizione corretta</li>
+      <li>Cow: Un simbolo presente nel codice ma nella posizione sbagliata</li>
+      </ul>
+      L'implementazione in Java è volutamente essenziale, focalizzandosi sulla logica del gioco 
+      piuttosto che su interfacce grafiche o funzionalità avanzate. Questo approccio minimalista 
+      permette di concentrarsi sull'algoritmo e sulla struttura del codice, rendendolo un ottimo 
+      esercizio per chi desidera migliorare le proprie competenze in programmazione orientata agli 
+      oggetti e nella gestione dell'input/output da console.
+      <br>
+      In sintesi, Bulls and Cows è più di un semplice gioco: è un invito a riscoprire il piacere 
+      della programmazione attraverso la logica e la deduzione, offrendo una sfida tanto per il 
+      giocatore quanto per lo sviluppatore.
+      </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; justify-content: center;">
+      <img src="../images/screens/bulls1.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/bulls2.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/bulls3.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX MODALE PER IMMAGINI -->
+<div id="imageModal" class="modal hidden">
+  <div class="modal-overlay" onclick="document.getElementById('imageModal').classList.add('hidden')"></div>
+  <div class="modal-content" style="background: transparent; border: none; box-shadow: none; max-width: 95vw; max-height: 95vh; display: flex; justify-content: center; align-items: center;">
+    <button class="close-btn" onclick="document.getElementById('imageModal').classList.add('hidden')" style="position: absolute; top: 10px; right: 15px;">✕</button>
+    <img id="imageModalContent" src="" alt="Screenshot" style="width: auto; height: auto; max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px;" />
+  </div>
+</div>
+

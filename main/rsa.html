@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CtrlAltMary</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+  </head>
+  <body class="rsa">
+
+    <!-- NAV -->
+    <header id="header">
+      <div class="header-cont container">
+
+        <div class="left-cont">
+          <a href="../home.html">
+            <img class="header-brand" src="../images/ctrlaltmary.png" alt="Logo CtrlAltMary" />
+          </a>
+
+          <div class="hamburger-menu-container">
+            <button id="hamburgerBtn" class="hamburger-btn icon-svg" aria-label="Apri menu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <div class="nav-wrapper" id="navWrapper">
+              <ul class="main-nav">
+                <li><a href="../home.html" class="nav-item">About me</a></li>
+                <li><a href="../main/sviluppo.html" class="nav-item">Sviluppatrice</a></li>
+                <li><a href="../main/rsa.html" class="nav-item active">Reti, sistemi & AI</a></li>
+                <li><a href="../main/lingue.html" class="nav-item">Insegnante</a></li>
+                <li><a href="../main/persona.html" class="nav-item">Persona</a></li>
+                <li><a href="../main/contatti.html" class="nav-item">Contatti</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-cont">        
+          <ul class="topbar-icons">
+            <li class="nav-item" id="searchIcon" title="Cerca">
+              <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z" />
+              </svg>
+            </li>
+
+            <li class="nav-item notification-wrapper" id="notificationIcon" title="Notifiche">
+              <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+              <path d="M12 2a7 7 0 00-7 7v3.586L3.707 16.293A1 1 0 004.414 18h15.172a1 1 0 00.707-1.707L19 12.586V9a7 7 0 00-7-7zm0 20a2.5 2.5 0 002.45-2h-4.9a2.5 2.5 0 002.45 2z" />
+              </svg>
+              <ul class="dropdown notification-dropdown dropdown-menu hidden">
+                <li>Non ci sono nuove notifiche</li>
+              </ul>
+            </li>
+      <!-- PROFILI -->
+            <li class="nav-item profile-wrapper" id="profileIcon" title="Profilo">
+              <img src="../images/profiles/v1.png" alt="Profilo" class="profile-avatar" />
+              <svg class="icon-svg caret-down" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="white" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+              <ul class="dropdown profile-dropdown dropdown-menu hidden">
+                <li><a href="https://www.linkedin.com/in/mmilasi/" target="_blank"><img src="../images/profiles/v1.png" alt="Profilo" class="profile-avatar" />Azienda</a></li>
+                <li><a href="mailto:mamilasinovic@gmail.com" target="_blank"><img src="../images/profiles/v2.png" alt="Profilo" class="profile-avatar" />Ente formativo</a></li>
+                <li><a href="https://replayenglish.github.io/" target="_blank"><img src="../images/profiles/v3.png" alt="Profilo" class="profile-avatar" />Studente</a></li>
+                <li><a href="https://www.instagram.com/pergliamicimarione/" target="_blank"><img src="../images/profiles/v4.png" alt="Profilo" class="profile-avatar" />Collega</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div id="searchPopup" class="popup hidden">
+          <div class="popup-content">
+            <p>Perchè cercare?
+            <br>Hai già trovato tutto ciò che ti serve!
+          <br><br>Divertiti a navigare le sfumature della protagonista e trova quella che fa al caso tuo! Una volta che l'hai fatto...</p>
+            </p>
+            <a href="../main/contatti.html" class="action-button">Better Call Mary!</a>
+            <button class="close-btn" id="closeSearchPopup">✕</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <!-- BANNER - SHOWCASE -->
+    <main>    
+      <div class="banner-section" id="banner-section">
+        <div class="banner-content container">
+          <h2 class="banner__title">42</h2>
+          <p class="banner__info">La risposta alla domanda fondamentale sulla vita, l'universo e tutto quanto</p>
+          <p class="banner__overview">
+          Reti, sistemi e intelligenze artificiali: Mary ci si tuffa dentro.
+Con più entusiasmo che documentazione. Ma funziona.
+          </p>
+            <div class="modal-buttons">
+              <button 
+                class="action-button primary bnn" 
+                onclick="loadModalFromFile('../main_modals/42_modal.html')"> ▶ Riproduci
+              </button>
+              <button 
+                class="action-button secondary bnn" 
+                onclick="loadModalFromFile('../main_modals/42_infomodal.html')"> 🛈 Altre info
+              </button>
+            </div>
+        </div>
+        <div class="banner_fadeBottom"></div>
+      </div>
+
+      <!-- POPUP CONTAINER AND PAGES - SCELTI PER TE -->
+      <div class="popup-cont container" id="popup-cont">
+    
+        <div class="popup-section">
+          <h2 class="theme-section-heading">Scelti per te oggi</h2>
+        </div>
+        <div class="popup-wrapper">
+          <button class="scroll-btn left">←</button>
+          <div class="popup-row">
+            <a class="theme-item" href="../home.html">
+              <img class="theme-item-img" src="../images/banners/gits.jpg" alt="Ctrl+Alt+M(ary)" />
+              <div class="theme-item-title">Ctrl+Alt+M(ary)</div>
+            </a>
+            <a class="theme-item" href="../main/sviluppo.html">
+              <img class="theme-item-img" src="../images/banners/gits2.jpg" alt="Hello World: The Evolution" />
+              <div class="theme-item-title">Hello World: The Evolution</div>
+            </a>
+            <a class="theme-item" href="../main/rsa.html">
+              <img class="theme-item-img" src="../images/banners/gits3.jpg" alt="42" />
+              <div class="theme-item-title">42</div>
+            </a>
+            <a class="theme-item" href="../main/lingue.html">
+              <img class="theme-item-img" src="../images/banners/gits4.jpg" alt="Teacher Mary: A Love Language" />
+              <div class="theme-item-title">Teacher Mary - A Love Language</div>
+            </a>
+            <a class="theme-item" href="../main/persona.html">
+              <img class="theme-item-img" src="../images/banners/gits5.jpg" alt="Multipass" />
+              <div class="theme-item-title">Multipass</div>
+            </a>
+            <a class="theme-item" href="../main/contatti.html">
+              <img class="theme-item-img" src="../images/banners/gits6.jpg" alt="Better Call Mary" />
+              <div class="theme-item-title">Better Call Mary</div>
+            </a>
+          </div>
+          <button class="scroll-btn right">→</button>
+        </div>
+
+        <div class="popup-section">
+          <h2 class="theme-section-heading">Perchè hai guardato CTRLALTM</h2>
+        </div>
+        <div class="popup-wrapper">
+        <button class="scroll-btn left">←</button>
+          <div class="popup-row">
+            <a class="theme-item" href="https://www.linkedin.com/in/mmilasi/" target="_blank">
+              <img class="theme-item-img" src="../images/banners/con1.jpg" alt="" />
+              <div class="theme-item-title">Sono un'azienda</div>
+            </a>
+            <a class="theme-item" href="mailto:mamilasinovic@gmail.com" target="_blank">
+              <img class="theme-item-img" src="../images/banners/con2.jpg" alt="" />
+              <div class="theme-item-title">Sono un'Ente formativo</div>
+            </a>
+            <a class="theme-item" href="https://replayenglish.github.io/" target="_blank">
+              <img class="theme-item-img" src="../images/banners/con3.jpg" alt="" />
+              <div class="theme-item-title">Sono uno studente</div>
+            </a>
+            <a class="theme-item" href="https://www.instagram.com/pergliamicimarione/" target="_blank">
+              <img class="theme-item-img" src="../images/banners/con4.jpg" alt="" />
+              <div class="theme-item-title">Sono un* collega</div>
+            </a>
+          </div>
+        <button class="scroll-btn right">→</button>
+        </div>
+
+      </div>  
+
+      <div id="previewModal" class="modal hidden">
+        <div class="modal-overlay" onclick="document.getElementById('previewModal').classList.add('hidden')"></div>
+        <div class="modal-content">
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container container">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mmilasi/" target="_blank"><img src="../images/icons/linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/mmilasi" target="_blank" ><img src="../images/icons/github.svg" alt="GitHub" /></a>
+          <a href="https://mmilasi.github.io/"><img src="../images/icons/ctrlaltmary.svg" alt="CtrlAltMary" /></a>
+          <a href="https://replayenglish.github.io/" target="_blank"><img src="../images/icons/replay.svg" alt="ReplayEnglish" /></a>
+        </div>
+      <div class="footer-note">
+        <p>© 2025 CTRLALTM. Tutti i diritti riservati.</p>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<div class="modal-banner" style="background-image: url('../images/project_modals/pro1.jpg');">
+  <button class="close-btn" onclick="document.getElementById('previewModal').classList.add('hidden')">✕</button>
+</div>
+
+<div class="modal-body">
+  <h2>CTRLALTM - Sito personale</h2>
+  <p>«Il portfolio di una sviluppatrice che si racconta, una card alla volta»</p>
+
+  <div class="modal-extra-info">
+    <p><strong>Genere:</strong> Portfolio creativo, Web personal branding</p>
+    <p><strong>Linguaggi utilizzati:</strong> HTML, CSS, JavaScript</p>
+    <p><strong>Link:</strong> <a href="https://mmilasi.github.io" target="_blank" class="link-as-text">mmilasi.github.io</a></p>
+
+    <p>
+Questo progetto nasce dall'idea di reinterpretare in chiave personale l'interfaccia di una celebre piattaforma di streaming, sfruttandone l'immediatezza e la familiarità 
+per offrire un'esperienza utente accogliente e intuitiva. La scelta non è solo estetica: è un gioco consapevole con le abitudini digitali degli utenti, che qui vengono 
+invitate a scoprire la persona come se sfogliassero un catalogo di storie.<br>
+
+Ogni sezione del sito è costruita come una “card” narrativa, non un semplice elenco di esperienze lavorative o competenze tecniche. Ho voluto superare la logica tradizionale 
+del portfolio, spesso fredda e impersonale, per abbracciare un racconto autentico: quello della persona dietro al codice.<br>
+
+L'idea centrale è che la vita professionale - come quella personale - è fatta di storie, di transizioni, di scelte, di errori e di svolte. 
+Il portfolio diventa quindi un dispositivo narrativo in cui design e contenuti collaborano per restituire un'immagine complessa, umana, viva. È un invito a conoscere la persona dietro la professionista 
+attraverso un'interfaccia che, pur essendo tecnica, mette al centro l'identità, le emozioni e il percorso che l'hanno portata fin qui.<br><br>
+
+Dal punto di vista tecnico, ho scelto volutamente di realizzare il sito in <strong>HTML, CSS e JavaScript,</strong> linguaggi con cui ho iniziato a familiarizzare da 
+autodidatta durante l'adolescenza. Tornare a scrivere codice con questi strumenti ha rappresentato un ritorno alle origini: un esercizio di memoria, 
+ma anche un'occasione per consolidare quanto appreso anni fa e reinterpretarlo con maggiore consapevolezza. Questo portfolio è stato quindi anche un modo
+ per rimettere le mani in pasta, rispolverare nozioni dormienti e restituire forma visiva al mio percorso attraverso strumenti che mi sono familiari da sempre.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; justify-content: center;">
+      <img src="../images/screens/ctrlaltm1.jpg" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/ctrlaltm2.jpg" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/ctrlaltm3.jpg" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+      <img src="../images/screens/ctrlaltm4.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX MODALE PER IMMAGINI -->
+<div id="imageModal" class="modal hidden">
+  <div class="modal-overlay" onclick="document.getElementById('imageModal').classList.add('hidden')"></div>
+  <div class="modal-content" style="background: transparent; border: none; box-shadow: none; max-width: 95vw; max-height: 95vh; display: flex; justify-content: center; align-items: center;">
+    <button class="close-btn" onclick="document.getElementById('imageModal').classList.add('hidden')" style="position: absolute; top: 10px; right: 15px;">✕</button>
+    <img id="imageModalContent" src="" alt="Screenshot" style="width: auto; height: auto; max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px;" />
+  </div>
+</div>

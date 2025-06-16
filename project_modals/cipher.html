@@ -1,0 +1,49 @@
+<div class="modal-banner" style="background-image: url('../images/project_modals/pro5.jpg');">
+    <button class="close-btn" onclick="document.getElementById('previewModal').classList.add('hidden')">✕</button>
+</div> 
+
+<div class="modal-body"> 
+    <h2>Chuck Norris Cipher Encoder</h2>
+    <p>«Un esercizio di logica e minimalismo: codificare il testo con zeri e spazi»</p> 
+
+    <div class="modal-extra-info"> 
+        <p><strong>Genere:</strong> Programma da riga di comando, cifratura unaria</p> 
+        <p><strong>Linguaggi utilizzati:</strong> Java</p> 
+        <p><strong>Link:</strong> <a href="https://github.com/mmilasi/chuckNorrisCipherEncoder" target="_blank" class="link-as-text">github.com/mmilasi/chuckNorrisCipherEncoder</a></p>
+        <p>
+        Questo progetto nasce come esercizio di programmazione per implementare il cosiddetto "Chuck Norris Cipher", un 
+        sistema di codifica unario che trasforma il testo in sequenze di zeri e spazi. L'obiettivo è esplorare la
+         manipolazione delle stringhe e la logica binaria attraverso un'interfaccia testuale semplice e diretta.
+        <br><br>
+        Il programma offre tre funzionalità principali:
+        <ul>
+        <li><strong>Encode:</strong> converte una stringa di testo nel formato Chuck Norris codificato.</li>
+        <li><strong>Decode:</strong> decodifica una stringa codificata nel formato originale.</li>
+        <li><strong>Exit:</strong> termina l'esecuzione del programma.</li>
+        </ul>
+        L'implementazione in Java si concentra sulla chiarezza e sulla semplicità, rendendo il codice 
+        facilmente comprensibile e modificabile. Questo approccio minimalista permette di focalizzarsi 
+        sull'algoritmo di codifica/decodifica, rappresentando un ottimo esercizio per chi desidera approfondire 
+        la gestione delle stringhe e la logica binaria.
+        <br><br>
+        In sintesi, il Chuck Norris Cipher Encoder è più di un semplice esercizio: è un invito a esplorare 
+        la bellezza della semplicità nella programmazione, dimostrando come concetti complessi possano essere 
+        affrontati con soluzioni eleganti e concise.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.5rem; justify-content: center;">
+        <img src="../images/screens/chuck1.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+        <img src="../images/screens/chuck2.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+        <img src="../images/screens/chuck3.png" onclick="openImageModal(this.src)" style="width: 150px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+        </div>
+    </div> 
+</div> 
+
+<!-- LIGHTBOX MODALE PER IMMAGINI -->
+<div id="imageModal" class="modal hidden">
+  <div class="modal-overlay" onclick="document.getElementById('imageModal').classList.add('hidden')"></div>
+  <div class="modal-content" style="background: transparent; border: none; box-shadow: none; max-width: 95vw; max-height: 95vh; display: flex; justify-content: center; align-items: center;">
+    <button class="close-btn" onclick="document.getElementById('imageModal').classList.add('hidden')" style="position: absolute; top: 10px; right: 15px;">✕</button>
+    <img id="imageModalContent" src="" alt="Screenshot" style="width: auto; height: auto; max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 4px;" />
+  </div>
+</div>
