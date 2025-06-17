@@ -435,7 +435,8 @@ header.black-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 98vh;
+    height: 100vh;
+    height: 100dvh;
     width: 100%;
     position: relative;
     display: flex;
@@ -444,6 +445,20 @@ header.black-bg {
     opacity: 0;
     animation: fadeInBackground 1.5s ease-in forwards;
 }
+
+@media (max-width: 768px) {
+    .banner-section {
+        padding-bottom: 180px;
+    }
+}
+@media (max-width: 480px) {
+    .banner-section {
+        padding-bottom: 180px;
+        height: 80vh;
+        height: 80dvh;
+    }
+}
+
 
 @keyframes fadeInBackground {
     to {
