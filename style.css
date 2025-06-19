@@ -7,6 +7,8 @@ html {
 }
 body {
     margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+
 }
 .container {
     width: 100%;
