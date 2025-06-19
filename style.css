@@ -162,6 +162,23 @@ header.black-bg {
     height: clamp(16px, 3vw, 24px);
 }
 
+.icon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.icon-label svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
 .profile-wrapper {
     position: relative;
 }
