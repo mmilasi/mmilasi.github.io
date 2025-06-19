@@ -10,7 +10,6 @@ const modal = document.getElementById('previewModal');
 const closeBtn = document.getElementById('closeModalBtn');
 const closeModal = () => {
   modal.classList.add('hidden');
-  video.src = '';
 };
 closeBtn?.addEventListener('click', closeModal);
 window.addEventListener('keydown', e => e.key === 'Escape' && closeModal());
